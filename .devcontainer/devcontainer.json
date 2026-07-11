@@ -1,0 +1,23 @@
+{
+  "name": "Flutter Codespace",
+  // Imagen optimizada que ya incluye el SDK de Flutter y Dart listo para usar
+  "image": "ghcr.io/cirruslabs/flutter:stable",
+
+  // Extensiones esenciales de VS Code que se instalarán automáticamente
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dart-code.dart-code",
+        "dart-code.flutter"
+      ]
+    }
+  },
+
+  // Puertos expuestos para previsualizar aplicaciones Web o API expuestas
+  "forwardPorts": [
+    8080
+  ],
+
+  // Comando automático que verifica la instalación al iniciar el entorno
+  "postCreateCommand": "flutter doctor"
+}
